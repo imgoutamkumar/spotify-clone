@@ -1,0 +1,37 @@
+.spotify__song-card {
+  height: 260px;
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.spotify_song-card__title {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  word-spacing: 0.4px;
+  color: white;
+  margin-top: 18px;
+  text-transform: capitalize;
+}
+.spotify_song-card__thumbnail {
+  text-align: center;
+  background-color: black;
+  height: 120px;
+  width: 160px;
+
+  border-radius: 12px;
+  color: white;
+}
+.spotify_song-card__title {
+  padding: 10px;
+  color: white;
+}
+.spotify_song-card__description {
+  padding: 4px;
+  color: white;
+}

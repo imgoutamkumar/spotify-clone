@@ -1,0 +1,50 @@
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 670px;
+  gap: 10px;
+}
+input {
+  padding: 10px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 400px;
+  height: 50px;
+}
+input:hover {
+  border-color: blue;
+}
+.login__btn {
+  width: 110px;
+  background-color: rgb(61, 217, 61);
+  color: black;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 14px;
+  border: none;
+}
+.signup__btn {
+  background-color: white;
+  color: gray;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 14px;
+  border: 2px solid lightgrey;
+}
+.action-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 412px;
+}
+#remember_me {
+  margin-left: 10px;
+}
+hr {
+  width: 100%;
+  border: 1px solid black;
+}
