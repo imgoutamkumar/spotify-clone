@@ -1,6 +1,6 @@
 .spotify__song-card {
   height: 260px;
-  max-width: 210px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,15 +23,18 @@
   background-color: black;
   height: 120px;
   width: 160px;
-
   border-radius: 12px;
   color: white;
 }
 .spotify_song-card__title {
   padding: 10px;
   color: white;
+  height: 35px;
+  text-align: center;
 }
 .spotify_song-card__description {
-  padding: 4px;
-  color: white;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.629);
+  font-size: 13px;
+  height: 50px;
 }

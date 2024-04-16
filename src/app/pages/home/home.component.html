@@ -27,8 +27,9 @@
       style="font-weight: bold"
       (click)="onNavigate('library')"
     >
-      <a>your Library</a>
+      <a>Your Library</a>
     </div>
+    <br />
     <div
       class="spotify__home-container_side-bar-item"
       style="font-weight: bold"
@@ -36,30 +37,79 @@
     >
       <a>Create playlist</a>
     </div>
+    <div
+      class="spotify__home-container_side-bar-item"
+      style="font-weight: bold"
+      (click)="onNavigate('liked-songs')"
+    >
+      <a>Liked Songs</a>
+    </div>
   </div>
 
   <div class="spotify__home-container_playlist-container col-10">
     <app-top-nav></app-top-nav>
 
-    <div [style.paddingTop]="'40px'" class="mt-5 container-fluid">
-      <h4 [style.color]="'white'" [style.padding]="'10px'">Focus</h4>
+    <div [style.paddingTop]="'30px'" class="mt-5 container-fluid">
+      <h4
+        [style.color]="'white'"
+        [style.padding]="'10px'"
+        [style.paddingTop]="'20px'"
+      >
+        Focus
+      </h4>
       <div class="playlist_card_collections">
         <div id="song_card_item" *ngFor="let sc of songCards">
-          <app-song-card>
-            [playlistThumbnail]="sc.thumbnail" [title]="sc.title"
+          <app-song-card
+            [playlistThumbnail]="sc.thumbnail"
+            [title]="sc.title"
             [description]="sc.description"
+            [song_id]="sc.song_id"
+          >
           </app-song-card>
         </div>
       </div>
 
+      <h4
+        [style.color]="'white'"
+        [style.padding]="'10px'"
+        [style.paddingTop]="'20px'"
+      >
+        Spotify Playlist
+      </h4>
       <div class="playlist_card_collections">
         <div id="song_card_item" *ngFor="let sc of songCards">
-          <app-song-card>
-            [playlistThumbnail]="sc.thumbnail" [title]="sc.title"
+          <app-song-card
+            [playlistThumbnail]="sc.thumbnail"
+            [title]="sc.title"
             [description]="sc.description"
+            [song_id]="sc.song_id"
+          >
+          </app-song-card>
+        </div>
+      </div>
+
+      <h4
+        [style.color]="'white'"
+        [style.padding]="'10px'"
+        [style.paddingTop]="'20px'"
+      >
+        Songs of India
+      </h4>
+      <div class="playlist_card_collections">
+        <div id="song_card_item" *ngFor="let sc of songCards">
+          <app-song-card
+            [playlistThumbnail]="sc.thumbnail"
+            [title]="sc.title"
+            [description]="sc.description"
+            [song_id]="sc.song_id"
+          >
           </app-song-card>
         </div>
       </div>
     </div>
+    <br />
   </div>
+</div>
+<div class="row">
+  <app-play-bar></app-play-bar>
 </div>

@@ -1,60 +1,85 @@
-<div class="container">
-  <form [formGroup]="userForm" (ngSubmit)="submit()">
-    <div class="login__container">
+<div class="main">
+  <div class="fluid-container">
+    <header
+      class="login_header"
+      style="display: flex; justify-content: flex-start; align-items: center"
+    >
       <img
         src="assets/Spotify_Green.png"
-        width="300"
+        width="180"
         alt="Spotify green logo"
       />
-      <hr />
-      <div>
-        <label><strong> Email or Username</strong></label
-        ><br />
-        <input
-          [formControl]="usernameFormControl"
-          type="text"
-          placeholder="Enter email or username"
-        />
-      </div>
-      <div>
-        <label><strong> Password</strong></label
-        ><br />
-        <input
-          [formControl]="passwordFormControl"
-          type="password"
-          placeholder="Enter password"
-        /><br />
-        <label class="mt-2"
-          ><a [style.textDecoration]="'underline'"
-            >Forgot your password ?</a
-          ></label
+    </header>
+    <br />
+  </div>
+  <div class="center">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+      <div class="login__container">
+        <h1
+          style="
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            margin: 80px 0px 48px;
+          "
         >
-      </div>
-      <div>
-        <div class="action-button">
-          <span
-            [style.display]="'flex'"
-            [style.justifyContent]="'flex-start'"
-            [style.alignItems]="'stretch'"
-            [style.gap]="'8px'"
-          >
-            <input type="checkbox" id="remember_me" [style.width]="'15px'" />
-            <label
-              for="remember_me"
-              [style.height]="'100%'"
-              [style.padding]="'10px'"
-            >
-              <span>Remember Me</span>
-            </label>
-          </span>
-          <button class="login__btn">Log in</button>
+          Log in to Spotify
+        </h1>
+        <button class="direct_signup_button">Continue With Goolge</button>
+        <button class="direct_signup_button">Continue With Facebook</button>
+        <button class="direct_signup_button">Continue With Apple</button>
+        <button class="direct_signup_button">Continue With Phone Number</button>
+        <hr />
+        <div>
+          <label><strong> Email or Username</strong></label
+          ><br />
+          <input
+            [formControl]="usernameFormControl"
+            type="text"
+            placeholder="Enter email or username"
+          />
         </div>
+        <div>
+          <label><strong> Password</strong></label
+          ><br />
+          <input
+            [formControl]="passwordFormControl"
+            type="password"
+            placeholder="Enter password"
+          /><br />
+          <label class="mt-2"
+            ><a [style.textDecoration]="'underline'"
+              >Forgot your password ?</a
+            ></label
+          >
+        </div>
+        <div>
+          <div class="action-button">
+            <span
+              [style.display]="'flex'"
+              [style.justifyContent]="'flex-start'"
+              [style.alignItems]="'stretch'"
+              [style.gap]="'8px'"
+            >
+              <input type="checkbox" id="remember_me" [style.width]="'15px'" />
+              <label
+                for="remember_me"
+                [style.height]="'100%'"
+                [style.padding]="'10px'"
+              >
+                <span>Remember Me</span>
+              </label>
+            </span>
+            <button class="login__btn">Log in</button>
+          </div>
+        </div>
+        <hr [style.width]="'40%'" />
+        <strong style="color: white">Don't have an account?</strong>
+        <button class="signup__btn" [style.width]="'400px'">
+          SIGN UP FOR SPOTIFY
+        </button>
+        <br />
       </div>
-      <hr [style.width]="'40%'" />
-      <strong>Don't have an account?</strong>
-      <button class="signup__btn" [style.width]="'30%'">
-        SIGN UP FOR SPOTIFY
-      </button>
-    </div>
-  </form>
+    </form>
+  </div>
 </div>

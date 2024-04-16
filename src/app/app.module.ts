@@ -13,6 +13,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SongComponent } from './pages/song/song.component';
+import { PlayBarComponent } from './components/play-bar/play-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SongComponent } from './pages/song/song.component';
     TopNavComponent,
     ButtonComponent,
     SongComponent,
+    PlayBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
