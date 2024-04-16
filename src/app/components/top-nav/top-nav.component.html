@@ -2,8 +2,16 @@
   <nav class="spotify__top-nav">
     <div class="spotify__top-nav_focus_title">
       <ul class="spotify__top-nav_auth">
-        <li><button class="forward_btn"></button></li>
-        <li><button class="backward_btn"></button></li>
+        <li>
+          <button class="forward_btn">
+            <mat-icon> arrow_back_ios</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button class="backward_btn">
+            <mat-icon> arrow_forward_ios</mat-icon>
+          </button>
+        </li>
         <li *ngIf="isSearchFieldVisible">
           <div class="search_box">
             <input

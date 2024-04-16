@@ -52,6 +52,9 @@
 }
 .forward_btn,
 .backward_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background-color: black;
   color: white;
