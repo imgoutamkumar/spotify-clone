@@ -58,7 +58,7 @@
         Focus
       </h4>
       <div class="playlist_card_collections">
-        <div id="song_card_item" *ngFor="let sc of songCards">
+        <div id="song_card_item" *ngFor="let sc of songCards; let i = index">
           <app-song-card
             [playlistThumbnail]="sc.thumbnail"
             [title]="sc.title"

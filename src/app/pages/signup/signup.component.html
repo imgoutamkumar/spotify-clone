@@ -1,1 +1,85 @@
-<p>signup works!</p>
+<div class="main">
+  <div class="fluid-container">
+    <header
+      class="login_header"
+      style="display: flex; justify-content: flex-start; align-items: center"
+    >
+      <img
+        src="assets/Spotify_Green.png"
+        width="180"
+        alt="Spotify green logo"
+      />
+    </header>
+    <br />
+  </div>
+  <div class="center">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+      <div class="login__container">
+        <h1
+          style="
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            margin: 80px 0px 48px;
+          "
+        >
+          Sign Up to Spotify
+        </h1>
+        <button class="direct_signup_button">Sign up With Goolge</button>
+        <button class="direct_signup_button">Sign up With Facebook</button>
+        <button class="direct_signup_button">Sign up With Apple</button>
+        <button class="direct_signup_button">Sign up With Phone Number</button>
+        <hr />
+        <div>
+          <label><strong> Email or Username</strong></label
+          ><br />
+          <input
+            [formControl]="usernameFormControl"
+            type="text"
+            placeholder="Enter email or username"
+          />
+        </div>
+        <div>
+          <label><strong> Password</strong></label
+          ><br />
+          <input
+            [formControl]="passwordFormControl"
+            type="password"
+            placeholder="Enter password"
+          /><br />
+          <label class="mt-2"
+            ><a [style.textDecoration]="'underline'"
+              >Forgot your password ?</a
+            ></label
+          >
+        </div>
+        <div>
+          <div class="action-button">
+            <span
+              [style.display]="'flex'"
+              [style.justifyContent]="'flex-start'"
+              [style.alignItems]="'stretch'"
+              [style.gap]="'8px'"
+            >
+              <input type="checkbox" id="remember_me" [style.width]="'15px'" />
+              <label
+                for="remember_me"
+                [style.height]="'100%'"
+                [style.padding]="'10px'"
+              >
+                <span>Remember Me</span>
+              </label>
+            </span>
+            <button class="login__btn">Sign up</button>
+          </div>
+        </div>
+        <hr [style.width]="'40%'" />
+        <strong style="color: white">have an account?</strong>
+        <button class="signup__btn" [style.width]="'400px'">
+          LOG IN TO SPOTIFY
+        </button>
+        <br />
+      </div>
+    </form>
+  </div>
+</div>

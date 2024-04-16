@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-song-card',
@@ -10,14 +10,22 @@ export class SongCardComponent implements OnInit {
   @Input() playlistThumbnail!: string;
   @Input() title!: string;
   @Input() description!: string;
-  @Input() song_id!: number | string;
-  constructor(private router: Router) {}
+  @Input() song_id!: number;
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
   ngOnInit(): void {
     console.warn(this.playlistThumbnail);
     console.warn(this.title);
     console.warn(this.description);
   }
-  onNavigateToSong() {
-    this.router.navigateByUrl('/song/${this.song_id}');
+  onNavigateToSong(song_id: number) {
+    this.activatedRoute.paramMap.subscribe({
+      next: (result: any) => {
+        console.log(result);
+      },
+      error: (error: any) => {
+        console.log(error);
+      },
+    });
+    this.router.navigate(['/song/', song_id]);
   }
 }

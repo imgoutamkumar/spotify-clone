@@ -1,0 +1,96 @@
+.login__container {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 734px;
+  border-radius: 12px;
+  gap: 10px;
+}
+input {
+  padding: 10px;
+  border: none;
+  border: 1px solid rgb(157, 157, 157);
+  border-radius: 8px;
+  width: 350px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+input:hover {
+  border-color: white;
+}
+label {
+  color: white;
+}
+.login__btn {
+  width: 110px;
+  background-color: rgb(61, 217, 61);
+  color: black;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 14px;
+  border: none;
+}
+.signup__btn {
+  background-color: white;
+  color: gray;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 14px;
+  border: 2px solid lightgrey;
+  margin-bottom: 20px;
+}
+.signup__btn:hover {
+  background-color: rgb(61, 217, 61);
+  color: black;
+}
+.direct_signup_button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 14px;
+  margin-bottom: 2px;
+  border: 2px solid lightgrey;
+  width: 350px;
+  height: 45px;
+}
+.action-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 412px;
+}
+#remember_me {
+  margin-left: 10px;
+}
+hr {
+  width: 70%;
+  border: 1px solid white;
+}
+
+.login_header {
+  background-color: black;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  align-content: flex-start;
+  padding-left: 20px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #1e1e1e;
+}
